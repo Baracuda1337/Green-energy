@@ -291,7 +291,24 @@ a{
 .info_txt{
 	margin: 10px 0 0 10px;	
 }
-
+/* Video */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.video_content{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -10;
+  }
+  #video_media{
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
+  }
+  /* Video END */
 @media screen and (min-width: 1360px){
   html
   {
