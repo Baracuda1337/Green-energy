@@ -136,7 +136,33 @@ footer{
 #sizefooter{
 	height: 2.5rem;
 	width: 2.5rem;
+	transition: transform .3s ease-in-out;
 }
+#sizefooter:hover{
+	transform: scale(1.05);
+	animation: Rotate 1s forwards ease-in-out; 
+}
+.button_table:hover,
+.button_feedback:hover{
+	transform: scale(1.05);
+	background-color: rgb(195, 214, 194);
+}
+/* Animation */
+@keyframes Rotate {
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(15deg);
+	}
+	75%{
+		transform: rotate(-15deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+/* Anomation end */
 .main{
 	display:flex;
 	width: 100%;
@@ -409,6 +435,7 @@ body {
 	color:green;
 	border-radius: 10px;
 	background-color: grey;
+	transition: all .3s ease-in-out;
   }
 
 @media screen and (min-width: 1360px){
