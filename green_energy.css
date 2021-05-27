@@ -489,8 +489,12 @@ body {
 		display: none;
 	  }
 	.info{
-		padding-top: 150px;
+		padding-top: 21vh;
 	}
+	.feedback,
+  .table{
+	  padding-top: 2vh;
+  }
 	p{
 		margin:0;
 	}
